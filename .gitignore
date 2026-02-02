@@ -1,0 +1,19 @@
+# Dev/build outputs
+dist/
+
+# Misc
+.DS_Store
+**/.DS_Store
+.idea
+
+# Local env files
+.env
+.env.*
+!.env.example
+
+# Logs
+logs
+*.log*
+
+# Node dependencies
+node_modules/
