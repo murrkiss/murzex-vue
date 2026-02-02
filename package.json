@@ -21,7 +21,7 @@
 		"node": ">=12.11.0"
 	},
 	"scripts": {
-		"build:mvue": "pnpm --filter murzex-vue build"
+		"build:mvue": "pnpm --filter mvue build"
 	},
 	"devDependencies": {
 		"@tailwindcss/vite": "^4.1.18",
