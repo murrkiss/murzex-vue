@@ -1,3 +1,5 @@
+import './assets/styles/tw.main.style.css'
+
 import '@murzex-vue/mvue/style'
 
 import { createApp } from 'vue'
