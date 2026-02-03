@@ -4,5 +4,5 @@
 @import 'tailwindcss/utilities.css' layer(utilities) prefix(mvue);
 
 :root {
-  @apply mvue:text-sm;
+	@apply mvue:text-sm;
 }
