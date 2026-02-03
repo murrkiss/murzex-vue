@@ -2,30 +2,25 @@ import { defineComponent, h, SetupContext } from '@vue/runtime-core'
 
 import { IconPropsTypes, IconEmitsTypes } from './types'
 
-import { icons } from './icons'
+import { IconService } from './service'
 
 export default defineComponent(
 	(props: IconPropsTypes, ctx: SetupContext<IconEmitsTypes>) => {
+		const useIconService = new IconService(props, ctx)
+
 		return () =>
 			h(
 				'svg',
 				{
 					...ctx.attrs,
-					class: 'm-component-icon',
+					class: useIconService.clsx,
 					width: '24',
 					height: '24',
 					viewBox: '0 0 24 24',
 					fill: 'none',
 					xmlns: 'http://www.w3.org/2000/svg',
 				},
-				[
-					...icons[props.icon].map((item, index) =>
-						h('path', {
-							key: index,
-							d: item,
-						}),
-					),
-				],
+				[...useIconService.getIcon()],
 			)
 	},
 	{
