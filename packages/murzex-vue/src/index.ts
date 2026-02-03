@@ -1,4 +1,4 @@
-import './app/assets/styles/main.style.css'
+import './app/assets/styles/tw.main.style.css'
 
 export { default as MIcon } from './shared/ui/icon/component'
 export type {
