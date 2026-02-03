@@ -1,13 +1,15 @@
 import { IconType } from '../icon/types'
 
-export interface IconPostitionTypes {
-	position: 'top' | 'left' | 'right' | 'bottom'
+export type PositionType = 'top' | 'left' | 'right' | 'bottom'
+
+export interface IconPositionTypes {
+	position: PositionType
 	icon: IconType
 }
 
 export interface LabelPropsTypes {
-	label: string
-	iocns: IconPostitionTypes
+	value?: string
+	icons?: IconPositionTypes[]
 }
 
 export interface LabelEmitsTypes {}

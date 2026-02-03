@@ -1,4 +1,4 @@
-import './style.css'
+import './tw.style.css'
 
 import { defineComponent, h, SetupContext } from '@vue/runtime-core'
 
@@ -11,12 +11,16 @@ export default defineComponent(
 		const useLabelService = new LabelService(props, ctx)
 
 		return () =>
-			h('span', {
-				...ctx.attrs,
-				class: useLabelService.clsx,
-			})
+			h(
+				'div',
+				{
+					...ctx.attrs,
+					class: useLabelService.clsx,
+				},
+				[useLabelService.getLabel()],
+			)
 	},
 	{
-		props: ['label', 'iocns'],
+		props: ['value', 'icons'],
 	},
 )

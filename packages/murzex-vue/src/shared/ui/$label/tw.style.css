@@ -1,0 +1,29 @@
+@reference '../../../app/assets/styles/tw.main.style.css';
+
+@layer components {
+	.m-component-label {
+		@apply mvue:inline-flex mvue:flex-col mvue:items-center mvue:justify-center mvue:gap-2;
+
+		padding: var(--mvue-label-padding-y, 0.25rem)
+			var(--mvue-label-padding-x, 0.75rem);
+	}
+
+	.m-component-label .row {
+		@apply inline-flex flex-nowrap items-center justify-center gap-2;
+		@apply font-medium;
+		@apply leading-5;
+	}
+
+	.m-component-label .m-component-icon {
+		@apply fill-black;
+
+		min-width: var(--mvue-icon-width, 1.25rem);
+		min-height: var(--mvue-icon-height, 1.25rem);
+		max-width: var(--mvue-icon-width, 1.25rem);
+		max-height: var(--mvue-icon-height, 1.25rem);
+	}
+
+	.icon-only {
+		--mvue-label-padding-x: 0.25rem;
+	}
+}
