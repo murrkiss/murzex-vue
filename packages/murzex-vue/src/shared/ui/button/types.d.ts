@@ -1,7 +1,6 @@
 import { LabelPropsTypes } from '../$label/types'
 
 export type ButtonSeverityType =
-	| 'primary'
 	| 'secondary'
 	| 'success'
 	| 'warning'
