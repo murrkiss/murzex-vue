@@ -9,13 +9,13 @@
 	}
 
 	.m-component-label .row {
-		@apply inline-flex flex-nowrap items-center justify-center gap-2;
-		@apply font-medium;
-		@apply leading-5;
+		@apply mvue:inline-flex mvue:flex-nowrap mvue:items-center mvue:justify-center mvue:gap-2;
+		@apply mvue:font-medium;
+		@apply mvue:leading-5;
 	}
 
 	.m-component-label .m-component-icon {
-		@apply fill-black;
+		@apply mvue:fill-black;
 
 		min-width: var(--mvue-icon-width, 1.25rem);
 		min-height: var(--mvue-icon-height, 1.25rem);

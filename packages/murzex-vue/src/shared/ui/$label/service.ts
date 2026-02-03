@@ -2,7 +2,7 @@ import { h, SetupContext, VNodeChild } from '@vue/runtime-core'
 
 import type { LabelPropsTypes, LabelEmitsTypes, PositionType } from './types'
 
-import { MIcon } from 'packages/murzex-vue/src'
+import { MIcon } from '../../../'
 
 export class LabelService {
 	constructor(
