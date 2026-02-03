@@ -1,3 +1,5 @@
+import '@murzex-vue/mvue/style'
+
 import { createApp } from 'vue'
 import { createPinia } from 'pinia'
 
