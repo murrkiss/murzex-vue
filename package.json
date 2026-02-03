@@ -21,7 +21,8 @@
 		"node": ">=12.11.0"
 	},
 	"scripts": {
-		"build:mvue": "pnpm --filter mvue build"
+		"build:mvue": "pnpm --filter mvue build",
+		"demo:run": "pnpm --filter playground dev"
 	},
 	"devDependencies": {
 		"@tailwindcss/vite": "^4.1.18",
