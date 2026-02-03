@@ -1,4 +1,4 @@
-import { SetupContext, VNode, h } from '@vue/runtime-core'
+import { SetupContext, VNodeChild, h } from '@vue/runtime-core'
 
 import type { IconPropsTypes, IconEmitsTypes } from './types'
 
@@ -16,7 +16,7 @@ export class IconService {
 		return clsx
 	}
 
-	getIcon = (): VNode[] => {
+	getIcon = (): VNodeChild => {
 		return icons[this.props.icon].map((item, index) =>
 			h('path', { key: index, d: item }),
 		)
