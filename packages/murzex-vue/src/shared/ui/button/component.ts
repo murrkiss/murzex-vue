@@ -19,6 +19,7 @@ export default defineComponent(
 					...ctx.attrs,
 					class: useButtonService.clsx(),
 					onClick: useButtonService.handleClick,
+					disabled: props.disabled || props.loading,
 				},
 				[h($MLabel, { value: props.value, icons: props.icons })],
 			)

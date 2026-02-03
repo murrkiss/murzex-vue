@@ -15,6 +15,10 @@ export class ButtonService {
 			clsx.push(`m-button-severity-${this.props.severity}`)
 		}
 
+		if (this.props.size) {
+			clsx.push(`m-button-size-${this.props.size}`)
+		}
+
 		return clsx
 	}
 

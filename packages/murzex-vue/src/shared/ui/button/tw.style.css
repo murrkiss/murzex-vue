@@ -57,67 +57,117 @@
 
 	.m-button-severity-secondary {
 		--mvue-button-text-color: oklch(27.9% 0.041 260.031); /* slate 800 */
-    --mvue-button-bg-color: oklch(96.8% 0.007 247.896); /* slate 100 */
-    --mvue-button-border-color: oklch(96.8% 0.007 247.896); /* slate 100 */
+		--mvue-button-bg-color: oklch(96.8% 0.007 247.896); /* slate 100 */
+		--mvue-button-border-color: oklch(96.8% 0.007 247.896); /* slate 100 */
 
-    --mvue-button-bg-hover-color: oklch(90.8% 0.007 247.896); /* slate 100 + % */
-    --mvue-button-border-hover-color: oklch(90.8% 0.007 247.896); /* slate 100 + % */
-    --mvue-button-bg-active-color: oklch(86.8% 0.007 247.896); /* slate 100 + % */
-    --mvue-button-border-active-color: oklch(86.8% 0.007 247.896); /* slate 100 + % */
+		--mvue-button-bg-hover-color: oklch(
+			90.8% 0.007 247.896
+		); /* slate 100 + % */
+		--mvue-button-border-hover-color: oklch(
+			90.8% 0.007 247.896
+		); /* slate 100 + % */
+		--mvue-button-bg-active-color: oklch(
+			86.8% 0.007 247.896
+		); /* slate 100 + % */
+		--mvue-button-border-active-color: oklch(
+			86.8% 0.007 247.896
+		); /* slate 100 + % */
 	}
 
 	.m-button-severity-success {
-    --mvue-button-text-color: oklch(100% 0 0); /* white */
-    --mvue-button-bg-color: oklch(72.3% 0.219 149.579); /* green 500 */
-    --mvue-button-border-color: oklch(72.3% 0.219 149.579); /* green 500 */
+		--mvue-button-text-color: oklch(100% 0 0); /* white */
+		--mvue-button-bg-color: oklch(72.3% 0.219 149.579); /* green 500 */
+		--mvue-button-border-color: oklch(72.3% 0.219 149.579); /* green 500 */
 
-    --mvue-button-bg-hover-color: oklch(62.3% 0.219 149.579); /* green 500 + % */
-    --mvue-button-border-hover-color: oklch(62.3% 0.219 149.579); /* green 500 + % */
-    --mvue-button-bg-active-color: oklch(56.3% 0.219 149.579); /* green 500 + % */
-    --mvue-button-border-active-color: oklch(56.3% 0.219 149.579); /* green 500 + % */
-  }
+		--mvue-button-bg-hover-color: oklch(
+			62.3% 0.219 149.579
+		); /* green 500 + % */
+		--mvue-button-border-hover-color: oklch(
+			62.3% 0.219 149.579
+		); /* green 500 + % */
+		--mvue-button-bg-active-color: oklch(
+			56.3% 0.219 149.579
+		); /* green 500 + % */
+		--mvue-button-border-active-color: oklch(
+			56.3% 0.219 149.579
+		); /* green 500 + % */
+	}
 
-  .m-button-severity-warning {
-    --mvue-button-text-color: oklch(100% 0 0); /* white */
-    --mvue-button-bg-color: oklch(70.5% 0.213 47.604); /* orange 500 */
-    --mvue-button-border-color: oklch(70.5% 0.213 47.604); /* orange 500 */
+	.m-button-severity-warning {
+		--mvue-button-text-color: oklch(100% 0 0); /* white */
+		--mvue-button-bg-color: oklch(70.5% 0.213 47.604); /* orange 500 */
+		--mvue-button-border-color: oklch(70.5% 0.213 47.604); /* orange 500 */
 
-    --mvue-button-bg-hover-color: oklch(60.5% 0.213 47.604); /* orange 500 + % */
-    --mvue-button-border-hover-color: oklch(60.5% 0.213 47.604); /* orange 500 + % */
-    --mvue-button-bg-active-color: oklch(54.5% 0.213 47.604); /* orange 500 + % */
-    --mvue-button-border-active-color: oklch(54.5% 0.213 47.604); /* orange 500 + % */
-  }
+		--mvue-button-bg-hover-color: oklch(
+			60.5% 0.213 47.604
+		); /* orange 500 + % */
+		--mvue-button-border-hover-color: oklch(
+			60.5% 0.213 47.604
+		); /* orange 500 + % */
+		--mvue-button-bg-active-color: oklch(
+			54.5% 0.213 47.604
+		); /* orange 500 + % */
+		--mvue-button-border-active-color: oklch(
+			54.5% 0.213 47.604
+		); /* orange 500 + % */
+	}
 
-  .m-button-severity-danger {
-    --mvue-button-text-color: oklch(100% 0 0); /* white */
-    --mvue-button-bg-color: oklch(63.7% 0.237 25.331); /* red 500 */
-    --mvue-button-border-color: oklch(63.7% 0.237 25.331); /* red 500 */
+	.m-button-severity-danger {
+		--mvue-button-text-color: oklch(100% 0 0); /* white */
+		--mvue-button-bg-color: oklch(63.7% 0.237 25.331); /* red 500 */
+		--mvue-button-border-color: oklch(63.7% 0.237 25.331); /* red 500 */
 
-    --mvue-button-bg-hover-color: oklch(53.7% 0.237 25.331); /* red 500 + % */
-    --mvue-button-border-hover-color: oklch(53.7% 0.237 25.331); /* red 500 + % */
-    --mvue-button-bg-active-color: oklch(47.7% 0.237 25.331); /* red 500 + % */
-    --mvue-button-border-active-color: oklch(47.7% 0.237 25.331); /* red 500 + % */
-  }
+		--mvue-button-bg-hover-color: oklch(53.7% 0.237 25.331); /* red 500 + % */
+		--mvue-button-border-hover-color: oklch(
+			53.7% 0.237 25.331
+		); /* red 500 + % */
+		--mvue-button-bg-active-color: oklch(47.7% 0.237 25.331); /* red 500 + % */
+		--mvue-button-border-active-color: oklch(
+			47.7% 0.237 25.331
+		); /* red 500 + % */
+	}
 
-  .m-button-severity-info {
-    --mvue-button-text-color: oklch(100% 0 0); /* white */
-    --mvue-button-bg-color: oklch(62.3% 0.214 259.815); /* blue 500 */
-    --mvue-button-border-color: oklch(62.3% 0.214 259.815); /* blue 500 */
+	.m-button-severity-info {
+		--mvue-button-text-color: oklch(100% 0 0); /* white */
+		--mvue-button-bg-color: oklch(62.3% 0.214 259.815); /* blue 500 */
+		--mvue-button-border-color: oklch(62.3% 0.214 259.815); /* blue 500 */
 
-    --mvue-button-bg-hover-color: oklch(52.3% 0.214 259.815); /* blue 500 + % */
-    --mvue-button-border-hover-color: oklch(52.3% 0.214 259.815); /* blue 500 + % */
-    --mvue-button-bg-active-color: oklch(46.3% 0.214 259.815); /* blue 500 + % */
-    --mvue-button-border-active-color: oklch(46.3% 0.214 259.815); /* blue 500 + % */
-  }
+		--mvue-button-bg-hover-color: oklch(52.3% 0.214 259.815); /* blue 500 + % */
+		--mvue-button-border-hover-color: oklch(
+			52.3% 0.214 259.815
+		); /* blue 500 + % */
+		--mvue-button-bg-active-color: oklch(
+			46.3% 0.214 259.815
+		); /* blue 500 + % */
+		--mvue-button-border-active-color: oklch(
+			46.3% 0.214 259.815
+		); /* blue 500 + % */
+	}
 
-  .m-button-severity-help {
-    --mvue-button-text-color: oklch(100% 0 0); /* white */
-    --mvue-button-bg-color: oklch(58.5% 0.233 277.117); /* indigo 500 */
-    --mvue-button-border-color: oklch(58.5% 0.233 277.117); /* indigo 500 */
+	.m-button-severity-help {
+		--mvue-button-text-color: oklch(100% 0 0); /* white */
+		--mvue-button-bg-color: oklch(58.5% 0.233 277.117); /* indigo 500 */
+		--mvue-button-border-color: oklch(58.5% 0.233 277.117); /* indigo 500 */
 
-    --mvue-button-bg-hover-color: oklch(48.5% 0.233 277.117); /* indigo 500 + % */
-    --mvue-button-border-hover-color: oklch(48.5% 0.233 277.117); /* indigo 500 + % */
-    --mvue-button-bg-active-color: oklch(42.5% 0.233 277.117); /* indigo 500 + % */
-    --mvue-button-border-active-color: oklch(42.5% 0.233 277.117); /* indigo 500 + % */
-  }
+		--mvue-button-bg-hover-color: oklch(
+			48.5% 0.233 277.117
+		); /* indigo 500 + % */
+		--mvue-button-border-hover-color: oklch(
+			48.5% 0.233 277.117
+		); /* indigo 500 + % */
+		--mvue-button-bg-active-color: oklch(
+			42.5% 0.233 277.117
+		); /* indigo 500 + % */
+		--mvue-button-border-active-color: oklch(
+			42.5% 0.233 277.117
+		); /* indigo 500 + % */
+	}
+
+	.m-button-size-small {
+		--mvue-button-padding-y: 0.25rem;
+		--mvue-button-padding-x: 0.25rem;
+	}
+
+	.m-button-size-large {
+	}
 }

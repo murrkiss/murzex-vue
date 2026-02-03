@@ -8,7 +8,7 @@ export type ButtonSeverityType =
 	| 'info'
 	| 'help'
 
-export type ButtonSizeType = 'small' | 'base' | 'large'
+export type ButtonSizeType = 'small' | 'large'
 
 export interface ButtonPropsTypes extends LabelPropsTypes {
 	severity?: ButtonSeverityType
