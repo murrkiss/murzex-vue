@@ -1,3 +1,5 @@
+import './app/assets/styles/main.style.css'
+
 export { default as MIcon } from './shared/ui/icon/component'
 export type {
 	IconPropsTypes,

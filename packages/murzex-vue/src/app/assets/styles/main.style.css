@@ -1,0 +1,8 @@
+@layer theme, components, utilities;
+
+@import 'tailwindcss/theme.css' layer(theme) prefix(mvue);
+@import 'tailwindcss/utilities.css' layer(utilities) prefix(mvue);
+
+:root {
+  @apply mvue:text-sm;
+}
