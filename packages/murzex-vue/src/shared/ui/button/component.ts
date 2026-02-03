@@ -17,7 +17,7 @@ export default defineComponent(
 				'button',
 				{
 					...ctx.attrs,
-					class: useButtonService.clsx,
+					class: useButtonService.clsx(),
 					onClick: useButtonService.handleClick,
 				},
 				[h($MLabel, { value: props.value, icons: props.icons })],

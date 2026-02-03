@@ -15,7 +15,7 @@ export default defineComponent(
 				'div',
 				{
 					...ctx.attrs,
-					class: useLabelService.clsx,
+					class: useLabelService.clsx(),
 				},
 				[useLabelService.getLabel()],
 			)

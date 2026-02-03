@@ -13,7 +13,7 @@ export default defineComponent(
 				'svg',
 				{
 					...ctx.attrs,
-					class: useIconService.clsx,
+					class: useIconService.clsx(),
 					width: '24',
 					height: '24',
 					viewBox: '0 0 24 24',
