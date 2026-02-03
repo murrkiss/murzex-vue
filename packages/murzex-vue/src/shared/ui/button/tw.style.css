@@ -1,4 +1,57 @@
 @reference '../../../app/assets/styles/tw.main.style.css';
 
 @layer components {
+	.m-component-button {
+		@apply mvue:relative;
+		@apply mvue:inline-flex mvue:flex-col mvue:gap-2;
+		@apply mvue:select-none;
+		@apply mvue:overflow-hidden;
+		@apply mvue:outline-none;
+		@apply mvue:transition mvue:ease-in-out mvue:duration-150;
+
+		padding: var(--mvue-button-padding-y, 0.25rem)
+			var(--mvue-button-padding-x, 0.25rem);
+
+		font-family: inherit;
+		font-feature-settings: inherit;
+		font-size: var(--mvue-button-font-size, 1rem);
+		color: var(--mvue-button-text-color, oklch(100% 0 0)); /* white */
+
+		cursor: var(--mvue-button-cursor, pointer);
+
+		background-color: var(
+			--mvue-button-bg-color,
+			oklch(14.1% 0.005 285.823)
+		); /* zinc 950 */
+
+		opacity: var(--mvue-button-opacity, 1);
+
+		border-radius: var(--mvue-button-border-radius, 0.5rem);
+		border: 0.1rem solid
+			var(--mvue-button-border-color, oklch(14.1% 0.005 285.823)); /* zinc 950 */
+	}
+
+	.m-component-button .m-component-label .m-component-icon {
+		fill: var(--mvue-button-text-color, oklch(100% 0 0)); /* white */
+	}
+
+	.m-component-button:hover {
+		background-color: var(
+			--mvue-button-bg-hover-color,
+			oklch(24.1% 0.005 285.823)
+		); /* zinc 950 + % */
+
+		border: 0.1rem solid
+			var(--mvue-button-border-hover-color, oklch(24.1% 0.005 285.823)); /* zinc 950 + % */
+	}
+
+	.m-component-button:active {
+		background-color: var(
+			--mvue-button-bg-active-color,
+			oklch(30.1% 0.005 285.823)
+		); /* zinc 950 + % */
+
+		border: 0.1rem solid
+			var(--mvue-button-border-active-color, oklch(30.1% 0.005 285.823)); /* zinc 950 + % */
+	}
 }

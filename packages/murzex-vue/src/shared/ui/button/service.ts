@@ -11,6 +11,10 @@ export class ButtonService {
 	clsx = (): string[] => {
 		const clsx: string[] = ['m-component-button']
 
+		if (this.props.severity) {
+			clsx.push(`m-button-severity-${this.props.severity}`)
+		}
+
 		return clsx
 	}
 
