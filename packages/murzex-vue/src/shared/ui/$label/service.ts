@@ -13,6 +13,10 @@ export class LabelService {
 	clsx = (): string[] => {
 		const clsx: string[] = ['m-component-label']
 
+		if (this.props.icons && this.props.icons.length > 0 && !this.props.value) {
+			clsx.push(`icon-only`)
+		}
+
 		return clsx
 	}
 
