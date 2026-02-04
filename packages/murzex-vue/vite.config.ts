@@ -15,6 +15,7 @@ export default defineConfig({
 		vitePluginDts({
 			tsconfigPath: './tsconfig.build.json',
 			copyDtsFiles: true,
+			insertTypesEntry: true,
 		}),
 	],
 
@@ -32,9 +33,13 @@ export default defineConfig({
 					vue: 'Vue',
 				},
 			},
+
+			watch: {
+				include: 'src/**'
+			}
 		},
 
-		emptyOutDir: process.env.NODE_ENV === 'production',
+		emptyOutDir: false,
 		outDir: 'dist',
 	},
 
