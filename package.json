@@ -24,7 +24,7 @@
 		"build:mvue": "pnpm --filter mvue build",
 		"dev:mvue": "pnpm --filter mvue dev",
 
-		"app:playground:run": "pnpm --filter playground dev"
+		"dev:playground": "pnpm --filter playground dev"
 	},
 	"devDependencies": {
 		"@tailwindcss/vite": "^4.1.18",
