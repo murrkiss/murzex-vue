@@ -23,14 +23,24 @@ export default defineComponent(
 				},
 				[
 					h($MLabel, {
-						value: props.loading ? 'Loading ...' : props.value,
+						value: useButtonService.getValue(),
 						icons: props.icons,
 					}),
 				],
 			)
 	},
 	{
-		props: ['icons', 'value', 'severity', 'size', 'loading', 'disabled'],
+		props: [
+			'icons',
+			'value',
+			'severity',
+			'variant',
+			'size',
+			'rounded',
+			'loading',
+			'loadingText',
+			'disabled',
+		],
 		emits: ['click'],
 	},
 )

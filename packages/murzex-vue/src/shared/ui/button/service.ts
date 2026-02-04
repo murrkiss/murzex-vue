@@ -15,8 +15,20 @@ export class ButtonService {
 			clsx.push(`m-button-severity-${this.props.severity}`)
 		}
 
+		if (this.props.variant) {
+			clsx.push(`m-button-variant-${this.props.variant}`)
+		}
+
 		if (this.props.size) {
 			clsx.push(`m-button-size-${this.props.size}`)
+		}
+
+		if (this.props.rounded) {
+			clsx.push(`m-button-rounded`)
+		}
+
+		if (this.props.rounded && this.props.icons && this.props.icons.length === 1 && !this.props.value) {
+			clsx.push(`m-button-rounded-full`)
 		}
 
 		if (this.props.loading) {
@@ -28,6 +40,22 @@ export class ButtonService {
 		}
 
 		return clsx
+	}
+
+	getValue = (): string | undefined => {
+		if (!this.props.value) {
+			return undefined
+		}
+
+		if (!this.props.loading) {
+			return this.props.value
+		}
+
+		if (this.props.loadingText) {
+			return this.props.loadingText
+		}
+
+		return 'Loading ...'
 	}
 
 	handleClick = (event: Event): void => {
