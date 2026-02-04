@@ -22,6 +22,8 @@
 	},
 	"scripts": {
 		"build:mvue": "pnpm --filter mvue build",
+		"dev:mvue": "pnpm --filter mvue dev",
+
 		"app:playground:run": "pnpm --filter playground dev"
 	},
 	"devDependencies": {

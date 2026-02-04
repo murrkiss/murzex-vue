@@ -34,7 +34,7 @@ export default defineConfig({
 			},
 		},
 
-		emptyOutDir: true,
+		emptyOutDir: process.env.NODE_ENV === 'production',
 		outDir: 'dist',
 	},
 

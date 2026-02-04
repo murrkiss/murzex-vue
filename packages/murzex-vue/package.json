@@ -35,8 +35,12 @@
 		"dist"
 	],
 	"scripts": {
-		"build": "NODE_ENV=production npm run type-check && npm run build:only",
-		"build:only": "vite build --",
+		"build": "NODE_ENV=production pnpm run type-check && pnpm run build:js",
+		"dev": "pnpm run type-check && pnpm run build:watch",
+
+		"build:js": "vite build --",
+		"build:watch": "vite build --watch",
+
 		"type-check": "vue-tsc --noEmit"
 	},
 	"peerDependencies": {
