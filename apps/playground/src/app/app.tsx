@@ -10,6 +10,22 @@ export default defineComponent(() => {
 					<MButton
 						value='Submit'
 						icons={[{ position: 'left', icon: 'account' }]}
+						size='small'
+					/>
+					<MButton
+						value='Submit'
+						icons={[{ position: 'left', icon: 'account' }]}
+					/>
+					<MButton
+						value='Submit'
+						icons={[{ position: 'left', icon: 'account' }]}
+						size='large'
+					/>
+					<MButton
+						value='Submit'
+						severity='secondary'
+						icons={[{ position: 'left', icon: 'account' }]}
+						size='small'
 					/>
 					<MButton
 						value='Submit'
@@ -18,8 +34,32 @@ export default defineComponent(() => {
 					/>
 					<MButton
 						value='Submit'
+						severity='secondary'
+						icons={[{ position: 'left', icon: 'account' }]}
+						size='large'
+					/>
+					<MButton
+						value='Submit'
 						severity='success'
 						icons={[{ position: 'left', icon: 'account' }]}
+						size='small'
+					/>
+					<MButton
+						value='Submit'
+						severity='success'
+						icons={[{ position: 'left', icon: 'account' }]}
+					/>
+					<MButton
+						value='Submit'
+						severity='success'
+						icons={[{ position: 'left', icon: 'account' }]}
+						size='large'
+					/>
+					<MButton
+						value='Submit'
+						severity='warning'
+						icons={[{ position: 'left', icon: 'account' }]}
+						size='small'
 					/>
 					<MButton
 						value='Submit'
@@ -28,8 +68,35 @@ export default defineComponent(() => {
 					/>
 					<MButton
 						value='Submit'
+						severity='warning'
+						icons={[{ position: 'left', icon: 'account' }]}
+						size='large'
+					/>
+				</div>
+
+				<div class='flex flex-nowrap items-center gap-2'>
+					<MButton
+						value='Submit'
 						severity='danger'
 						icons={[{ position: 'left', icon: 'account' }]}
+						size='small'
+					/>
+					<MButton
+						value='Submit'
+						severity='danger'
+						icons={[{ position: 'left', icon: 'account' }]}
+					/>
+					<MButton
+						value='Submit'
+						severity='danger'
+						icons={[{ position: 'left', icon: 'account' }]}
+						size='large'
+					/>
+					<MButton
+						value='Submit'
+						severity='info'
+						icons={[{ position: 'left', icon: 'account' }]}
+						size='small'
 					/>
 					<MButton
 						value='Submit'
@@ -38,8 +105,26 @@ export default defineComponent(() => {
 					/>
 					<MButton
 						value='Submit'
+						severity='info'
+						icons={[{ position: 'left', icon: 'account' }]}
+						size='large'
+					/>
+					<MButton
+						value='Submit'
 						severity='help'
 						icons={[{ position: 'left', icon: 'account' }]}
+						size='small'
+					/>
+					<MButton
+						value='Submit'
+						severity='help'
+						icons={[{ position: 'left', icon: 'account' }]}
+					/>
+					<MButton
+						value='Submit'
+						severity='help'
+						icons={[{ position: 'left', icon: 'account' }]}
+						size='large'
 					/>
 				</div>
 			</div>
