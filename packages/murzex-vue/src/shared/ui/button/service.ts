@@ -19,6 +19,14 @@ export class ButtonService {
 			clsx.push(`m-button-size-${this.props.size}`)
 		}
 
+		if (this.props.loading) {
+			clsx.push(`m-button-loading`)
+		}
+
+		if (this.props.disabled) {
+			clsx.push(`m-button-disabled`)
+		}
+
 		return clsx
 	}
 

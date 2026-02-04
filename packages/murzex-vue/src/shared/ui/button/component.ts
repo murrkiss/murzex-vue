@@ -21,7 +21,12 @@ export default defineComponent(
 					onClick: useButtonService.handleClick,
 					disabled: props.disabled || props.loading,
 				},
-				[h($MLabel, { value: props.value, icons: props.icons })],
+				[
+					h($MLabel, {
+						value: props.loading ? 'Loading ...' : props.value,
+						icons: props.icons,
+					}),
+				],
 			)
 	},
 	{

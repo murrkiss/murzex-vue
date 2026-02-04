@@ -36,7 +36,7 @@
 		fill: var(--mvue-button-text-color, oklch(100% 0 0)); /* white */
 	}
 
-	.m-component-button:hover {
+	.m-component-button:enabled:hover {
 		background-color: var(
 			--mvue-button-bg-hover-color,
 			oklch(24.1% 0.005 285.823)
@@ -46,7 +46,7 @@
 			var(--mvue-button-border-hover-color, oklch(24.1% 0.005 285.823)); /* zinc 950 + % */
 	}
 
-	.m-component-button:active {
+	.m-component-button:enabled:active {
 		background-color: var(
 			--mvue-button-bg-active-color,
 			oklch(30.1% 0.005 285.823)
@@ -54,6 +54,17 @@
 
 		border: 1px solid
 			var(--mvue-button-border-active-color, oklch(30.1% 0.005 285.823)); /* zinc 950 + % */
+	}
+
+	.m-button-loading {
+		@apply mvue:animate-pulse;
+
+		--mvue-button-cursor: not-allowed;
+	}
+
+	.m-button-disabled {
+		--mvue-button-opacity: 0.4;
+		--mvue-button-cursor: not-allowed;
 	}
 
 	.m-button-severity-secondary {
