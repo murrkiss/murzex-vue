@@ -4,5 +4,5 @@ export interface InputPropsTypes {
 }
 
 export interface InputEmitsTypes {
-	value: (event: Event) => void
+	value: (input: string) => string
 }

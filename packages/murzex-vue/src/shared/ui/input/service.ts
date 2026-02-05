@@ -13,4 +13,10 @@ export class InputService {
 
 		return clsx
 	}
+
+	handleValue = (event: Event) => {
+		const target = event.target as HTMLInputElement
+
+		this.ctx.emit('value', target.value)
+	}
 }

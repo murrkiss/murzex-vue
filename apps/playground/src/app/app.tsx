@@ -1,6 +1,6 @@
 import { defineComponent } from 'vue'
 
-import { MButtonGroup, MButton } from '@murzex-vue/mvue'
+import { MButtonGroup, MButton, MInput } from '@murzex-vue/mvue'
 
 export default defineComponent(() => {
 	return () => (
@@ -14,6 +14,8 @@ export default defineComponent(() => {
 				<MButton value='Submit' severity='help' />
 				<MButton value='Submit' severity='info' />
 			</MButtonGroup>
+
+			<MInput/>
 		</>
 	)
 })
