@@ -43,7 +43,7 @@ jobs:
 
       - name: Publish to NPM
         # Публикуем из папки пакета
-        run: pnpm --filter ./packages/murzex-vue publish
+        run: pnpm --filter ./packages/murzex-vue publish --access public
         env:
           NODE_AUTH_TOKEN: ${{ secrets.NPM_TOKEN }}
 
