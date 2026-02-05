@@ -33,20 +33,10 @@ export class LabelService {
 			return null
 		}
 
-		return this.props.icons
-			.filter(item => item.position === position)
-			.map((item, index) => h(MIcon, { key: index, icon: item.icon }))
+		return this.props.icons.filter(item => item.position === position).map((item, index) => h(MIcon, { key: index, icon: item.icon }))
 	}
 
 	getLabel = (): VNodeChild => {
-		return [
-			this.getIcon('top'),
-			h('div', { class: 'row' }, [
-				this.getIcon('left'),
-				this.getValue(),
-				this.getIcon('right'),
-			]),
-			this.getIcon('bottom'),
-		]
+		return [this.getIcon('top'), h('div', { class: 'row' }, [this.getIcon('left'), this.getValue(), this.getIcon('right')]), this.getIcon('bottom')]
 	}
 }

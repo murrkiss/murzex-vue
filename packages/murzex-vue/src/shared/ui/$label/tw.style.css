@@ -4,8 +4,7 @@
 	.m-component-label {
 		@apply mvue:inline-flex mvue:flex-col mvue:items-center mvue:justify-center mvue:gap-2;
 
-		padding: var(--mvue-label-padding-y, 0.25rem)
-			var(--mvue-label-padding-x, 0.5rem);
+		padding: var(--mvue-label-padding-y, 0.25rem) var(--mvue-label-padding-x, 0.5rem);
 	}
 
 	.m-component-label .row {
