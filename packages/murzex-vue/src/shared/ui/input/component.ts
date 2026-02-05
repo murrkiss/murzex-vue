@@ -10,7 +10,7 @@ export default defineComponent(
 	(props: InputPropsTypes, ctx: SetupContext<InputEmitsTypes>) => {
 		const useInputService = new InputService(props, ctx)
 
-		return () => h('input', { ...ctx.attrs, class: useInputService.clsx(), placeholder: props.placeholder, onInput: useInputService.handleValue })
+		return () => h('input', { ...ctx.attrs, class: useInputService.clsx(), placeholder: props.placeholder, onInput: useInputService.handleInput })
 	},
 	{
 		props: ['value', 'placeholder'],
