@@ -1,12 +1,8 @@
+import { ComputedRef } from '@vue/runtime-core'
+
 import { LabelPropsTypes } from '../$label/types'
 
-export type ButtonSeverityType =
-	| 'secondary'
-	| 'success'
-	| 'warning'
-	| 'danger'
-	| 'info'
-	| 'help'
+export type ButtonSeverityType = 'secondary' | 'success' | 'warning' | 'danger' | 'info' | 'help'
 
 export type ButtonVariantType = 'text' | 'outlined' | 'link'
 
@@ -24,4 +20,9 @@ export interface ButtonPropsTypes extends LabelPropsTypes {
 
 export interface ButtonEmitsTypes {
 	click: (event: Event) => void
+}
+
+export interface ButtonGroupComputedContextTypes {
+	size: ComputedRef<ButtonSizeType>
+	rounded: ComputedRef<boolean>
 }

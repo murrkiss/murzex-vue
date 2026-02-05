@@ -17,8 +17,6 @@ export class IconService {
 	}
 
 	getIcon = (): VNodeChild => {
-		return icons[this.props.icon].map((item, index) =>
-			h('path', { key: index, d: item }),
-		)
+		return icons[this.props.icon].map((item, index) => h('path', { key: index, d: item }))
 	}
 }

@@ -1,6 +1,6 @@
 import { SetupContext } from '@vue/runtime-core'
 
-import type { ButtonPropsTypes, ButtonEmitsTypes } from './types'
+import type { ButtonPropsTypes, ButtonEmitsTypes, ButtonGroupComputedContextTypes } from './types'
 
 export class ButtonService {
 	constructor(
@@ -8,7 +8,7 @@ export class ButtonService {
 		public ctx: SetupContext<ButtonEmitsTypes>,
 	) {}
 
-	clsx = (): string[] => {
+	clsx = (ctx?: ButtonGroupComputedContextTypes): string[] => {
 		const clsx: string[] = ['m-component-button']
 
 		if (this.props.severity) {
@@ -23,7 +23,15 @@ export class ButtonService {
 			clsx.push(`m-button-size-${this.props.size}`)
 		}
 
+		if (ctx && ctx.size.value) {
+			clsx.push(`m-button-size-${ctx.size.value}`)
+		}
+
 		if (this.props.rounded) {
+			clsx.push(`m-button-rounded`)
+		}
+
+		if (ctx && ctx.rounded.value) {
 			clsx.push(`m-button-rounded`)
 		}
 

@@ -9,8 +9,7 @@
 		@apply mvue:outline-none;
 		@apply mvue:transition mvue:ease-in-out mvue:duration-150;
 
-		padding: var(--mvue-button-padding-y, 0.36rem)
-			var(--mvue-button-padding-x, 0.36rem);
+		padding: var(--mvue-button-padding-y, 0.36rem) var(--mvue-button-padding-x, 0.36rem);
 
 		font-family: inherit;
 		font-feature-settings: inherit;
@@ -20,16 +19,14 @@
 
 		cursor: var(--mvue-button-cursor, pointer);
 
-		background-color: var(
-			--mvue-button-bg-color,
-			oklch(14.1% 0.005 285.823)
-		); /* zinc 950 */
+		background-color: var(--mvue-button-bg-color, oklch(14.1% 0.005 285.823)); /* zinc 950 */
 
 		opacity: var(--mvue-button-opacity, 1);
 
-		border-radius: var(--mvue-button-border-radius, 0.4rem);
-		border: 1px solid
-			var(--mvue-button-border-color, oklch(14.1% 0.005 285.823)); /* zinc 950 */
+		border-radius: var(--mvue-button-border-radius-top-left, 0.4rem) var(--mvue-button-border-radius-top-right, 0.4rem)
+			var(--mvue-button-border-radius-bottom-right, 0.4rem) var(--mvue-button-border-radius-bottom-left, 0.4rem);
+
+		border: 1px solid var(--mvue-button-border-color, oklch(14.1% 0.005 285.823)); /* zinc 950 */
 	}
 
 	.m-component-button .m-component-label .m-component-icon {
@@ -37,23 +34,15 @@
 	}
 
 	.m-component-button:enabled:hover {
-		background-color: var(
-			--mvue-button-bg-hover-color,
-			oklch(24.1% 0.005 285.823)
-		); /* zinc 950 + % */
+		background-color: var(--mvue-button-bg-hover-color, oklch(24.1% 0.005 285.823)); /* zinc 950 + % */
 
-		border: 1px solid
-			var(--mvue-button-border-hover-color, oklch(24.1% 0.005 285.823)); /* zinc 950 + % */
+		border: 1px solid var(--mvue-button-border-hover-color, oklch(24.1% 0.005 285.823)); /* zinc 950 + % */
 	}
 
 	.m-component-button:enabled:active {
-		background-color: var(
-			--mvue-button-bg-active-color,
-			oklch(30.1% 0.005 285.823)
-		); /* zinc 950 + % */
+		background-color: var(--mvue-button-bg-active-color, oklch(30.1% 0.005 285.823)); /* zinc 950 + % */
 
-		border: 1px solid
-			var(--mvue-button-border-active-color, oklch(30.1% 0.005 285.823)); /* zinc 950 + % */
+		border: 1px solid var(--mvue-button-border-active-color, oklch(30.1% 0.005 285.823)); /* zinc 950 + % */
 	}
 
 	.m-button-loading {
@@ -72,39 +61,19 @@
 		--mvue-button-bg-color: oklch(96.8% 0.007 247.896); /* slate 100 */
 		--mvue-button-border-color: oklch(96.8% 0.007 247.896); /* slate 100 */
 
-		--mvue-button-bg-hover-color: oklch(
-			90.8% 0.007 247.896
-		); /* slate 100 + % */
-		--mvue-button-border-hover-color: oklch(
-			90.8% 0.007 247.896
-		); /* slate 100 + % */
-		--mvue-button-bg-active-color: oklch(
-			86.8% 0.007 247.896
-		); /* slate 100 + % */
-		--mvue-button-border-active-color: oklch(
-			86.8% 0.007 247.896
-		); /* slate 100 + % */
+		--mvue-button-bg-hover-color: oklch(90.8% 0.007 247.896); /* slate 100 + % */
+		--mvue-button-border-hover-color: oklch(90.8% 0.007 247.896); /* slate 100 + % */
+		--mvue-button-bg-active-color: oklch(86.8% 0.007 247.896); /* slate 100 + % */
+		--mvue-button-border-active-color: oklch(86.8% 0.007 247.896); /* slate 100 + % */
 
-		--mvue-button-variant-text-color: oklch(
-			37.2% 0.044 257.287
-		); /* slate 700 */
+		--mvue-button-variant-text-color: oklch(37.2% 0.044 257.287); /* slate 700 */
 
-		--mvue-button-variant-bg-hover-color: oklch(
-			90.8% 0.007 247.896 / 0.5
-		); /* slate 100 + % */
-		--mvue-button-variant-border-hover-color: oklch(
-			90.8% 0.007 247.896 / 0.5
-		); /* slate 100 + % */
-		--mvue-button-variant-bg-active-color: oklch(
-			86.8% 0.007 247.896 / 0.8
-		); /* slate 100 + % */
-		--mvue-button-variant-border-active-color: oklch(
-			86.8% 0.007 247.896 / 0.8
-		); /* slate 100 + % */
+		--mvue-button-variant-bg-hover-color: oklch(90.8% 0.007 247.896 / 0.5); /* slate 100 + % */
+		--mvue-button-variant-border-hover-color: oklch(90.8% 0.007 247.896 / 0.5); /* slate 100 + % */
+		--mvue-button-variant-bg-active-color: oklch(86.8% 0.007 247.896 / 0.8); /* slate 100 + % */
+		--mvue-button-variant-border-active-color: oklch(86.8% 0.007 247.896 / 0.8); /* slate 100 + % */
 
-		--mvue-button-variant-outlined-border-color: oklch(
-			92.9% 0.013 255.508
-		); /* slate 200 */
+		--mvue-button-variant-outlined-border-color: oklch(92.9% 0.013 255.508); /* slate 200 */
 	}
 
 	.m-button-severity-success {
@@ -112,39 +81,19 @@
 		--mvue-button-bg-color: oklch(72.3% 0.219 149.579); /* green 500 */
 		--mvue-button-border-color: oklch(72.3% 0.219 149.579); /* green 500 */
 
-		--mvue-button-bg-hover-color: oklch(
-			62.3% 0.219 149.579
-		); /* green 500 + % */
-		--mvue-button-border-hover-color: oklch(
-			62.3% 0.219 149.579
-		); /* green 500 + % */
-		--mvue-button-bg-active-color: oklch(
-			56.3% 0.219 149.579
-		); /* green 500 + % */
-		--mvue-button-border-active-color: oklch(
-			56.3% 0.219 149.579
-		); /* green 500 + % */
+		--mvue-button-bg-hover-color: oklch(62.3% 0.219 149.579); /* green 500 + % */
+		--mvue-button-border-hover-color: oklch(62.3% 0.219 149.579); /* green 500 + % */
+		--mvue-button-bg-active-color: oklch(56.3% 0.219 149.579); /* green 500 + % */
+		--mvue-button-border-active-color: oklch(56.3% 0.219 149.579); /* green 500 + % */
 
-		--mvue-button-variant-text-color: oklch(
-			72.3% 0.219 149.579
-		); /* green 500 */
+		--mvue-button-variant-text-color: oklch(72.3% 0.219 149.579); /* green 500 */
 
-		--mvue-button-variant-bg-hover-color: oklch(
-			62.3% 0.219 149.579 / 0.1
-		); /* green 500 + % */
-		--mvue-button-variant-border-hover-color: oklch(
-			62.3% 0.219 149.579 / 0.1
-		); /* green 500 + % */
-		--mvue-button-variant-bg-active-color: oklch(
-			56.3% 0.219 149.579 / 0.15
-		); /* green 500 + % */
-		--mvue-button-variant-border-active-color: oklch(
-			56.3% 0.219 149.579 / 0.15
-		); /* green 500 + % */
+		--mvue-button-variant-bg-hover-color: oklch(62.3% 0.219 149.579 / 0.1); /* green 500 + % */
+		--mvue-button-variant-border-hover-color: oklch(62.3% 0.219 149.579 / 0.1); /* green 500 + % */
+		--mvue-button-variant-bg-active-color: oklch(56.3% 0.219 149.579 / 0.15); /* green 500 + % */
+		--mvue-button-variant-border-active-color: oklch(56.3% 0.219 149.579 / 0.15); /* green 500 + % */
 
-		--mvue-button-variant-outlined-border-color: oklch(
-			92.5% 0.084 155.995
-		); /* green 200 */
+		--mvue-button-variant-outlined-border-color: oklch(92.5% 0.084 155.995); /* green 200 */
 	}
 
 	.m-button-severity-warning {
@@ -152,39 +101,19 @@
 		--mvue-button-bg-color: oklch(70.5% 0.213 47.604); /* orange 500 */
 		--mvue-button-border-color: oklch(70.5% 0.213 47.604); /* orange 500 */
 
-		--mvue-button-bg-hover-color: oklch(
-			60.5% 0.213 47.604
-		); /* orange 500 + % */
-		--mvue-button-border-hover-color: oklch(
-			60.5% 0.213 47.604
-		); /* orange 500 + % */
-		--mvue-button-bg-active-color: oklch(
-			54.5% 0.213 47.604
-		); /* orange 500 + % */
-		--mvue-button-border-active-color: oklch(
-			54.5% 0.213 47.604
-		); /* orange 500 + % */
+		--mvue-button-bg-hover-color: oklch(60.5% 0.213 47.604); /* orange 500 + % */
+		--mvue-button-border-hover-color: oklch(60.5% 0.213 47.604); /* orange 500 + % */
+		--mvue-button-bg-active-color: oklch(54.5% 0.213 47.604); /* orange 500 + % */
+		--mvue-button-border-active-color: oklch(54.5% 0.213 47.604); /* orange 500 + % */
 
-		--mvue-button-variant-text-color: oklch(
-			70.5% 0.213 47.604
-		); /* orange 500 */
+		--mvue-button-variant-text-color: oklch(70.5% 0.213 47.604); /* orange 500 */
 
-		--mvue-button-variant-bg-hover-color: oklch(
-			60.5% 0.213 47.604 / 0.1
-		); /* orange 500 + % */
-		--mvue-button-variant-border-hover-color: oklch(
-			60.5% 0.213 47.604 / 0.1
-		); /* orange 500 + % */
-		--mvue-button-variant-bg-active-color: oklch(
-			54.5% 0.213 47.604 / 0.15
-		); /* orange 500 + % */
-		--mvue-button-variant-border-active-color: oklch(
-			54.5% 0.213 47.604 / 0.15
-		); /* orange 500 + % */
+		--mvue-button-variant-bg-hover-color: oklch(60.5% 0.213 47.604 / 0.1); /* orange 500 + % */
+		--mvue-button-variant-border-hover-color: oklch(60.5% 0.213 47.604 / 0.1); /* orange 500 + % */
+		--mvue-button-variant-bg-active-color: oklch(54.5% 0.213 47.604 / 0.15); /* orange 500 + % */
+		--mvue-button-variant-border-active-color: oklch(54.5% 0.213 47.604 / 0.15); /* orange 500 + % */
 
-		--mvue-button-variant-outlined-border-color: oklch(
-			90.1% 0.076 70.697
-		); /* orange 200 */
+		--mvue-button-variant-outlined-border-color: oklch(90.1% 0.076 70.697); /* orange 200 */
 	}
 
 	.m-button-severity-danger {
@@ -193,32 +122,18 @@
 		--mvue-button-border-color: oklch(63.7% 0.237 25.331); /* red 500 */
 
 		--mvue-button-bg-hover-color: oklch(53.7% 0.237 25.331); /* red 500 + % */
-		--mvue-button-border-hover-color: oklch(
-			53.7% 0.237 25.331
-		); /* red 500 + % */
+		--mvue-button-border-hover-color: oklch(53.7% 0.237 25.331); /* red 500 + % */
 		--mvue-button-bg-active-color: oklch(47.7% 0.237 25.331); /* red 500 + % */
-		--mvue-button-border-active-color: oklch(
-			47.7% 0.237 25.331
-		); /* red 500 + % */
+		--mvue-button-border-active-color: oklch(47.7% 0.237 25.331); /* red 500 + % */
 
 		--mvue-button-variant-text-color: oklch(63.7% 0.237 25.331); /* red 500 */
 
-		--mvue-button-variant-bg-hover-color: oklch(
-			53.7% 0.237 25.331 / 0.1
-		); /* red 500 + % */
-		--mvue-button-variant-border-hover-color: oklch(
-			53.7% 0.237 25.331 / 0.1
-		); /* red 500 + % */
-		--mvue-button-variant-bg-active-color: oklch(
-			47.7% 0.237 25.331 / 0.15
-		); /* red 500 + % */
-		--mvue-button-variant-border-active-color: oklch(
-			47.7% 0.237 25.331 / 0.15
-		); /* red 500 + % */
+		--mvue-button-variant-bg-hover-color: oklch(53.7% 0.237 25.331 / 0.1); /* red 500 + % */
+		--mvue-button-variant-border-hover-color: oklch(53.7% 0.237 25.331 / 0.1); /* red 500 + % */
+		--mvue-button-variant-bg-active-color: oklch(47.7% 0.237 25.331 / 0.15); /* red 500 + % */
+		--mvue-button-variant-border-active-color: oklch(47.7% 0.237 25.331 / 0.15); /* red 500 + % */
 
-		--mvue-button-variant-outlined-border-color: oklch(
-			88.5% 0.062 18.334
-		); /* red 200 */
+		--mvue-button-variant-outlined-border-color: oklch(88.5% 0.062 18.334); /* red 200 */
 	}
 
 	.m-button-severity-info {
@@ -227,34 +142,18 @@
 		--mvue-button-border-color: oklch(62.3% 0.214 259.815); /* blue 500 */
 
 		--mvue-button-bg-hover-color: oklch(52.3% 0.214 259.815); /* blue 500 + % */
-		--mvue-button-border-hover-color: oklch(
-			52.3% 0.214 259.815
-		); /* blue 500 + % */
-		--mvue-button-bg-active-color: oklch(
-			46.3% 0.214 259.815
-		); /* blue 500 + % */
-		--mvue-button-border-active-color: oklch(
-			46.3% 0.214 259.815
-		); /* blue 500 + % */
+		--mvue-button-border-hover-color: oklch(52.3% 0.214 259.815); /* blue 500 + % */
+		--mvue-button-bg-active-color: oklch(46.3% 0.214 259.815); /* blue 500 + % */
+		--mvue-button-border-active-color: oklch(46.3% 0.214 259.815); /* blue 500 + % */
 
 		--mvue-button-variant-text-color: oklch(62.3% 0.214 259.815); /* blue 500 */
 
-		--mvue-button-variant-bg-hover-color: oklch(
-			52.3% 0.214 259.815 / 0.1
-		); /* blue 500 + % */
-		--mvue-button-variant-border-hover-color: oklch(
-			52.3% 0.214 259.815 / 0.1
-		); /* blue 500 + % */
-		--mvue-button-variant-bg-active-color: oklch(
-			46.3% 0.214 259.815 / 0.15
-		); /* blue 500 + % */
-		--mvue-button-variant-border-active-color: oklch(
-			46.3% 0.214 259.815 / 0.15
-		); /* blue 500 + % */
+		--mvue-button-variant-bg-hover-color: oklch(52.3% 0.214 259.815 / 0.1); /* blue 500 + % */
+		--mvue-button-variant-border-hover-color: oklch(52.3% 0.214 259.815 / 0.1); /* blue 500 + % */
+		--mvue-button-variant-bg-active-color: oklch(46.3% 0.214 259.815 / 0.15); /* blue 500 + % */
+		--mvue-button-variant-border-active-color: oklch(46.3% 0.214 259.815 / 0.15); /* blue 500 + % */
 
-		--mvue-button-variant-outlined-border-color: oklch(
-			88.2% 0.059 254.128
-		); /* blue 200 */
+		--mvue-button-variant-outlined-border-color: oklch(88.2% 0.059 254.128); /* blue 200 */
 	}
 
 	.m-button-severity-help {
@@ -262,73 +161,35 @@
 		--mvue-button-bg-color: oklch(58.5% 0.233 277.117); /* indigo 500 */
 		--mvue-button-border-color: oklch(58.5% 0.233 277.117); /* indigo 500 */
 
-		--mvue-button-bg-hover-color: oklch(
-			48.5% 0.233 277.117
-		); /* indigo 500 + % */
-		--mvue-button-border-hover-color: oklch(
-			48.5% 0.233 277.117
-		); /* indigo 500 + % */
-		--mvue-button-bg-active-color: oklch(
-			42.5% 0.233 277.117
-		); /* indigo 500 + % */
-		--mvue-button-border-active-color: oklch(
-			42.5% 0.233 277.117
-		); /* indigo 500 + % */
+		--mvue-button-bg-hover-color: oklch(48.5% 0.233 277.117); /* indigo 500 + % */
+		--mvue-button-border-hover-color: oklch(48.5% 0.233 277.117); /* indigo 500 + % */
+		--mvue-button-bg-active-color: oklch(42.5% 0.233 277.117); /* indigo 500 + % */
+		--mvue-button-border-active-color: oklch(42.5% 0.233 277.117); /* indigo 500 + % */
 
-		--mvue-button-variant-text-color: oklch(
-			58.5% 0.233 277.117
-		); /* indigo 500 */
+		--mvue-button-variant-text-color: oklch(58.5% 0.233 277.117); /* indigo 500 */
 
-		--mvue-button-variant-bg-hover-color: oklch(
-			48.5% 0.233 277.117 / 0.1
-		); /* indigo 500 + % */
-		--mvue-button-variant-border-hover-color: oklch(
-			48.5% 0.233 277.117 / 0.1
-		); /* indigo 500 + % */
-		--mvue-button-variant-bg-active-color: oklch(
-			42.5% 0.233 277.117 / 0.15
-		); /* indigo 500 + % */
-		--mvue-button-variant-border-active-color: oklch(
-			42.5% 0.233 277.117 / 0.15
-		); /* indigo 500 + % */
+		--mvue-button-variant-bg-hover-color: oklch(48.5% 0.233 277.117 / 0.1); /* indigo 500 + % */
+		--mvue-button-variant-border-hover-color: oklch(48.5% 0.233 277.117 / 0.1); /* indigo 500 + % */
+		--mvue-button-variant-bg-active-color: oklch(42.5% 0.233 277.117 / 0.15); /* indigo 500 + % */
+		--mvue-button-variant-border-active-color: oklch(42.5% 0.233 277.117 / 0.15); /* indigo 500 + % */
 
-		--mvue-button-variant-outlined-border-color: oklch(
-			87% 0.065 274.039
-		); /* indigo 200 */
+		--mvue-button-variant-outlined-border-color: oklch(87% 0.065 274.039); /* indigo 200 */
 	}
 
 	.m-button-variant-text {
-		--mvue-button-text-color: var(
-			--mvue-button-variant-text-color,
-			oklch(14.1% 0.005 285.823)
-		); /* zinc 950 */
+		--mvue-button-text-color: var(--mvue-button-variant-text-color, oklch(14.1% 0.005 285.823)); /* zinc 950 */
 
-		--mvue-button-bg-hover-color: var(
-			--mvue-button-variant-bg-hover-color,
-			oklch(24.1% 0.005 285.823 / 0.1)
-		); /* zinc 950 + % */
-		--mvue-button-border-hover-color: var(
-			--mvue-button-variant-border-hover-color,
-			oklch(24.1% 0.005 285.823 / 0.1)
-		); /* zinc 950 + % */
-		--mvue-button-bg-active-color: var(
-			--mvue-button-variant-bg-active-color,
-			oklch(30.1% 0.005 285.823 / 0.2)
-		); /* zinc 950 + % */
-		--mvue-button-border-active-color: var(
-			--mvue-button-variant-border-active-color,
-			oklch(30.1% 0.005 285.823 / 0.2)
-		); /* zinc 950 + % */
+		--mvue-button-bg-hover-color: var(--mvue-button-variant-bg-hover-color, oklch(24.1% 0.005 285.823 / 0.1)); /* zinc 950 + % */
+		--mvue-button-border-hover-color: var(--mvue-button-variant-border-hover-color, oklch(24.1% 0.005 285.823 / 0.1)); /* zinc 950 + % */
+		--mvue-button-bg-active-color: var(--mvue-button-variant-bg-active-color, oklch(30.1% 0.005 285.823 / 0.2)); /* zinc 950 + % */
+		--mvue-button-border-active-color: var(--mvue-button-variant-border-active-color, oklch(30.1% 0.005 285.823 / 0.2)); /* zinc 950 + % */
 
 		--mvue-button-bg-color: transparent;
 		--mvue-button-border-color: transparent;
 	}
 
 	.m-button-variant-link {
-		--mvue-button-text-color: var(
-			--mvue-button-variant-text-color,
-			oklch(14.1% 0.005 285.823)
-		); /* zinc 950 */
+		--mvue-button-text-color: var(--mvue-button-variant-text-color, oklch(14.1% 0.005 285.823)); /* zinc 950 */
 
 		--mvue-button-bg-hover-color: transparent;
 		--mvue-button-border-hover-color: transparent;
@@ -344,33 +205,15 @@
 	}
 
 	.m-button-variant-outlined {
-		--mvue-button-text-color: var(
-			--mvue-button-variant-text-color,
-			oklch(14.1% 0.005 285.823)
-		); /* zinc 950 */
+		--mvue-button-text-color: var(--mvue-button-variant-text-color, oklch(14.1% 0.005 285.823)); /* zinc 950 */
 
-		--mvue-button-bg-hover-color: var(
-			--mvue-button-variant-bg-hover-color,
-			oklch(24.1% 0.005 285.823 / 0.1)
-		); /* zinc 950 + % */
-		--mvue-button-border-hover-color: var(
-			--mvue-button-variant-outlined-border-color,
-			oklch(92% 0.004 286.32)
-		); /* zinc 200 */
-		--mvue-button-bg-active-color: var(
-			--mvue-button-variant-bg-active-color,
-			oklch(30.1% 0.005 285.823 / 0.2)
-		); /* zinc 950 + % */
-		--mvue-button-border-active-color: var(
-			--mvue-button-variant-outlined-border-color,
-			oklch(92% 0.004 286.32)
-		); /* zinc 200 */
+		--mvue-button-bg-hover-color: var(--mvue-button-variant-bg-hover-color, oklch(24.1% 0.005 285.823 / 0.1)); /* zinc 950 + % */
+		--mvue-button-border-hover-color: var(--mvue-button-variant-outlined-border-color, oklch(92% 0.004 286.32)); /* zinc 200 */
+		--mvue-button-bg-active-color: var(--mvue-button-variant-bg-active-color, oklch(30.1% 0.005 285.823 / 0.2)); /* zinc 950 + % */
+		--mvue-button-border-active-color: var(--mvue-button-variant-outlined-border-color, oklch(92% 0.004 286.32)); /* zinc 200 */
 
 		--mvue-button-bg-color: transparent;
-		--mvue-button-border-color: var(
-			--mvue-button-variant-outlined-border-color,
-			oklch(92% 0.004 286.32)
-		); /* zinc 200 */
+		--mvue-button-border-color: var(--mvue-button-variant-outlined-border-color, oklch(92% 0.004 286.32)); /* zinc 200 */
 	}
 
 	.m-button-size-small {
@@ -394,10 +237,16 @@
 	}
 
 	.m-button-rounded {
-		--mvue-button-border-radius: 2rem;
+		--mvue-button-border-radius-top-left: 2rem;
+		--mvue-button-border-radius-top-right: 2rem;
+		--mvue-button-border-radius-bottom-right: 2rem;
+		--mvue-button-border-radius-bottom-left: 2rem;
 	}
 
 	.m-button-rounded-full {
-		--mvue-button-border-radius: 50%;
+		--mvue-button-border-radius-top-left: 50%;
+		--mvue-button-border-radius-top-right: 50%;
+		--mvue-button-border-radius-bottom-right: 50%;
+		--mvue-button-border-radius-bottom-left: 50%;
 	}
 }
