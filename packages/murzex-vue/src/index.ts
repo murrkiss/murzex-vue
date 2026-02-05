@@ -11,3 +11,6 @@ export type { ButtonPropsTypes, ButtonEmitsTypes, ButtonSeverityType, ButtonSize
 
 export { default as MButtonGroup } from './shared/ui/button-group/component'
 export type { ButtonGroupPropsTypes, ButtonGroupEmitsTypes } from './shared/ui/button-group/types'
+
+export { default as MInput } from './shared/ui/input/component'
+export type { InputPropsTypes, InputEmitsTypes } from './shared/ui/input/types'
