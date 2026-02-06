@@ -15,7 +15,10 @@ export default defineComponent(() => {
 				<MButton value='Submit' severity='info' />
 			</MButtonGroup>
 
-			<MInput/>
+			<MInput placeholder='Enter name:' disabled />
+			<MInput placeholder='Enter name:' size='small' />
+			<MInput placeholder='Enter name:' />
+			<MInput placeholder='Enter name:' size='large' />
 		</>
 	)
 })
