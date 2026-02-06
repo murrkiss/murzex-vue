@@ -39,11 +39,11 @@
 	}
 
 	.m-component-input:enabled:hover {
-		--mvue-input-border-color: oklch(70.5% 0.015 286.067); /* zinc 400 */
+		border: 1px solid var(--mvue-input-border-hover-color, oklch(70.5% 0.015 286.067)); /* zinc 400 */
 	}
 
 	.m-component-input:enabled:focus {
-		--mvue-input-border-color: oklch(14.1% 0.005 285.823); /* zinc 950 */
+		border: 1px solid var(--mvue-input-border-focus-color, oklch(14.1% 0.005 285.823)); /* zinc 950 */
 	}
 
 	.m-input-fluid {
@@ -68,5 +68,13 @@
 
 		--mvue-input-padding-y: 0.735rem;
 		--mvue-input-padding-x: 0.985rem;
+	}
+
+	.m-input-invalid {
+		--mvue-input-placeholder-text-color: oklch(70.4% 0.191 22.216); /* red 400 */
+
+		--mvue-input-border-color: oklch(88.5% 0.062 18.334); /* red 200 */
+		--mvue-input-border-hover-color: oklch(70.4% 0.191 22.216); /* red 400 */
+		--mvue-input-border-focus-color: oklch(63.7% 0.237 25.331); /* red 500 */
 	}
 }
