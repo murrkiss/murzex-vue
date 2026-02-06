@@ -7,6 +7,8 @@
 		@apply mvue:select-none;
 		@apply mvue:overflow-hidden;
 		@apply mvue:outline-none;
+		@apply mvue:align-middle;
+		@apply mvue:box-border;
 		@apply mvue:transition mvue:ease-in-out mvue:duration-150;
 
 		padding: var(--mvue-button-padding-y, 0.36rem) var(--mvue-button-padding-x, 0.36rem);
