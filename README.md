@@ -53,8 +53,10 @@ Using a component:
 ```tsx
 import { MButton } from "@murzex/mvue";
 
-<MButton value="Submit" />
-<MButton value='Submit' severity='secondary' />
+<>
+  <MButton value="Submit" />
+  <MButton value="Submit" severity="secondary" />
+</>
 ```
 
 ---
@@ -69,7 +71,7 @@ import { MButton } from "@murzex/mvue";
 
 ## 🎨 Styling & Theming
 
-MUI is built on TailwindCSS and uses CSS variables for theming.
+MVue is built on TailwindCSS and uses CSS variables for theming.
 
 Customizing theme:
 
