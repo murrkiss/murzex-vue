@@ -13,8 +13,6 @@
 	}
 
 	.m-component-label .m-component-icon {
-		@apply mvue:fill-black;
-
 		min-width: var(--mvue-icon-width, 1rem);
 		min-height: var(--mvue-icon-height, 1rem);
 		max-width: var(--mvue-icon-width, 1rem);

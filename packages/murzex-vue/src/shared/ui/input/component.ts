@@ -11,25 +11,17 @@ export default defineComponent(
 		const useInputService = new InputService(props, ctx)
 
 		return () =>
-			h(
-				'label',
-				{
-					...ctx.attrs,
-					class: 'm-component-input-label',
-				},
-				[
-					h('input', {
-						type: props.type ?? 'text',
-						class: useInputService.clsx(),
-						placeholder: props.placeholder,
-						onInput: useInputService.handleInput,
-						disabled: props.disabled,
-					}),
-				],
-			)
+			h('input', {
+				...ctx.attrs,
+				type: props.type ?? 'text',
+				class: useInputService.clsx(),
+				placeholder: props.placeholder,
+				onInput: useInputService.handleInput,
+				disabled: props.disabled,
+			})
 	},
 	{
-		props: ['value', 'placeholder', 'variant', 'size', 'fluid', 'invalid', 'disabled'],
+		props: ['type', 'value', 'placeholder', 'variant', 'size', 'fluid', 'invalid', 'disabled'],
 		emits: ['value'],
 	},
 )

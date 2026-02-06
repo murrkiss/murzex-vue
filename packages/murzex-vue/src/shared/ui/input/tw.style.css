@@ -61,9 +61,6 @@
 
 		--mvue-input-padding-y: 0.485rem;
 		--mvue-input-padding-x: 0.735rem;
-
-		--mvue-icon-width: 0.9rem;
-		--mvue-icon-height: 0.9rem;
 	}
 
 	.m-input-size-large {
@@ -71,8 +68,5 @@
 
 		--mvue-input-padding-y: 0.735rem;
 		--mvue-input-padding-x: 0.985rem;
-
-		--mvue-icon-width: 1.125rem;
-		--mvue-icon-height: 1.125rem;
 	}
 }
