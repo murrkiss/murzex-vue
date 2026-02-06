@@ -1,6 +1,6 @@
 import './tw.style.css'
 
-import { computed, defineComponent, h, provide, SetupContext, VNodeChild } from '@vue/runtime-core'
+import { computed, defineComponent, h, provide, SetupContext } from '@vue/runtime-core'
 
 import type { ButtonGroupPropsTypes, ButtonGroupEmitsTypes } from './types'
 
