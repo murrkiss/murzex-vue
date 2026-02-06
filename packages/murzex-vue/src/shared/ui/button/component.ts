@@ -6,7 +6,7 @@ import type { ButtonPropsTypes, ButtonEmitsTypes, ButtonGroupComputedContextType
 
 import { ButtonService } from './service'
 
-import { $MLabel } from '../../../'
+import $MLabel from '../$label/component'
 
 export default defineComponent(
 	(props: ButtonPropsTypes, ctx: SetupContext<ButtonEmitsTypes>) => {
