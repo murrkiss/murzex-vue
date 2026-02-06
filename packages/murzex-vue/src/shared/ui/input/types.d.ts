@@ -1,5 +1,3 @@
-export type InputVariantType = 'text'
-
 export type InputType = 'text' | 'password'
 
 export type InputSizeType = 'small' | 'large'
@@ -8,7 +6,6 @@ export interface InputPropsTypes {
 	type?: InputType
 	value?: string
 	placeholder?: string
-	variant?: InputVariantType
 	size?: InputSizeType
 	fluid?: boolean
 	invalid?: boolean

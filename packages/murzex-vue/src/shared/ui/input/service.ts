@@ -11,10 +11,6 @@ export class InputService {
 	clsx = (): string[] => {
 		const clsx: string[] = ['m-component-input']
 
-		if (this.props.variant) {
-			clsx.push(`m-input-variant-${this.props.variant}`)
-		}
-
 		if (this.props.size) {
 			clsx.push(`m-input-size-${this.props.size}`)
 		}

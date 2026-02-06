@@ -21,7 +21,7 @@ export default defineComponent(
 			})
 	},
 	{
-		props: ['type', 'value', 'placeholder', 'variant', 'size', 'fluid', 'invalid', 'disabled'],
+		props: ['type', 'value', 'placeholder', 'size', 'fluid', 'invalid', 'disabled'],
 		emits: ['value'],
 	},
 )
