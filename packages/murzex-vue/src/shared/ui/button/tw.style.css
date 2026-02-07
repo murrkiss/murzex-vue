@@ -3,12 +3,9 @@
 @layer components {
 	.m-component-button {
 		@apply mvue:relative;
-		@apply mvue:inline-flex mvue:flex-col mvue:gap-2 mvue:shrink-0;
 		@apply mvue:select-none;
 		@apply mvue:overflow-hidden;
 		@apply mvue:outline-none;
-		@apply mvue:align-middle;
-		@apply mvue:box-border;
 		@apply mvue:transition mvue:ease-in-out mvue:duration-150;
 
 		padding: var(--mvue-button-padding-y, 0.25rem) var(--mvue-button-padding-x, 0.25rem);

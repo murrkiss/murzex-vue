@@ -4,15 +4,14 @@
 	.m-component-input {
 		@apply mvue:relative;
 		@apply mvue:min-h-0;
-		@apply mvue:h-4;
-		@apply mvue:inline-flex mvue:flex-col mvue:gap-2 mvue:shrink-0;
 		@apply mvue:select-none;
 		@apply mvue:outline-none;
 		@apply mvue:leading-none;
-		@apply mvue:align-middle;
 		@apply mvue:box-content;
 		@apply mvue:appearance-none;
 		@apply mvue:transition mvue:ease-in-out mvue:duration-150;
+
+		height: var(--mvue-input-font-size, 1rem);
 
 		padding: var(--mvue-input-padding-y, 0.61rem) var(--mvue-input-padding-x, 0.86rem);
 
