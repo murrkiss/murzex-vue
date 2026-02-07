@@ -13,7 +13,7 @@ export default defineComponent(
 		return () => h('div', { ...ctx.attrs, class: useButtonSelectService.clsx() }, [useButtonSelectService.getButtons()])
 	},
 	{
-		props: ['buttons', 'severity', 'size', 'default', 'multiple', 'rounded'],
-		emits: ['click'],
+		props: ['buttons', 'size', 'default', 'multiple', 'rounded'],
+		emits: ['select'],
 	},
 )

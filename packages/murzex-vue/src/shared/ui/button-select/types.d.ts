@@ -2,8 +2,6 @@ import { ComputedRef } from 'vue'
 
 import { LabelPropsTypes } from '../$label/types'
 
-export type ButtonSeverityType = 'success' | 'warning' | 'danger' | 'info' | 'help'
-
 export type ButtonSizeType = 'small' | 'large'
 
 export interface ButtonPropsTypes extends LabelPropsTypes {
@@ -13,7 +11,6 @@ export interface ButtonPropsTypes extends LabelPropsTypes {
 
 export interface ButtonSelectPropsTypes {
 	buttons: ButtonPropsTypes[]
-	severity?: ButtonSeverityType
 	size?: ButtonSizeType
 	default?: string
 	multiple?: boolean
@@ -21,5 +18,5 @@ export interface ButtonSelectPropsTypes {
 }
 
 export interface ButtonSelectEmitsTypes {
-	click: (event: string) => void
+	select: (event: string[]) => void
 }

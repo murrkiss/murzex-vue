@@ -1,16 +1,18 @@
-import { h, ref, SetupContext, VNodeChild } from 'vue'
+import { computed, h, Ref, ref, SetupContext, VNodeChild } from 'vue'
 
 import type { ButtonSelectPropsTypes, ButtonSelectEmitsTypes } from './types'
 
 import $MLabel from '../$label/component'
 
 export class ButtonSelectService {
+	isActived: Ref<string[]>
+
 	constructor(
 		public props: ButtonSelectPropsTypes,
 		public ctx: SetupContext<ButtonSelectEmitsTypes>,
-	) {}
-
-	isActived = ref<string[]>([])
+	) {
+		this.isActived = ref<string[]>(props.default ? [props.default] : [])
+	}
 
 	clsx = (): string[] => {
 		const clsx = ['m-component-button-select']
@@ -22,30 +24,28 @@ export class ButtonSelectService {
 		return this.props.buttons.map((item, index) => {
 			const clsx = ['m-button-select-item']
 
-			const handleClick = (): void | null => {
+			const handleClick = (): void => {
+				if (item.disabled) {
+					return
+				}
+
 				if (this.props.multiple) {
-					if (this.isActived.value.includes(item.key)) {
-						this.isActived.value.splice(
-							this.isActived.value.findIndex(e => e === item.key),
-							1,
-						)
+					const index = this.isActived.value.findIndex(e => e === item.key)
 
-						return null
+					if (index !== -1) {
+						this.isActived.value = this.isActived.value.filter(e => e !== item.key)
+					} else {
+						this.isActived.value = [...this.isActived.value, item.key]
 					}
-
-					this.isActived.value.push(item.key)
-
-					return null
+				} else {
+					if (this.isActived.value.includes(item.key)) {
+						this.isActived.value = []
+					} else {
+						this.isActived.value = [item.key]
+					}
 				}
 
-				if (this.isActived.value.includes(item.key)) {
-					this.isActived.value = []
-
-					return null
-				}
-
-				this.isActived.value = []
-				this.isActived.value.push(item.key)
+				this.ctx.emit('select', this.isActived.value)
 			}
 
 			return h(
