@@ -14,7 +14,6 @@ export interface ButtonSelectPropsTypes {
 	size?: ButtonSizeType
 	default?: string
 	multiple?: boolean
-	rounded?: boolean
 }
 
 export interface ButtonSelectEmitsTypes {

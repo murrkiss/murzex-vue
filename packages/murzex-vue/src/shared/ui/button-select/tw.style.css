@@ -2,27 +2,17 @@
 
 @layer components {
 	.m-component-button-select {
-		@apply mvue:relative;
-		@apply mvue:inline-flex mvue:flex-nowrap mvue:items-center mvue:gap-2;
-		@apply mvue:select-none;
-		@apply mvue:overflow-hidden;
-		@apply mvue:outline-none;
-		@apply mvue:align-middle;
-		@apply mvue:box-border;
-		@apply mvue:transition mvue:ease-in-out mvue:duration-150;
-
-		padding: var(--mvue-button-select-padding-y, 0.25rem) var(--mvue-button-select-padding-x, 0.25rem);
-
-		background-color: var(--mvue-button-select-bg-color, oklch(92% 0.004 286.32)); /* zinc 200 */
-
-		border-radius: var(--mvue-button-select-border-radius-top-left, 0.4rem) var(--mvue-button-select-border-radius-top-right, 0.4rem)
-			var(--mvue-button-select-border-radius-bottom-right, 0.4rem) var(--mvue-button-select-border-radius-bottom-left, 0.4rem);
-
-		border: 1px solid var(--mvue-button-select-border-color, oklch(92% 0.004 286.32)); /* zinc 200 */
+		@apply mvue:inline-flex mvue:flex-nowrap mvue:items-center;
 	}
 
 	.m-component-button-select .m-button-select-item {
+		@apply mvue:relative;
+		@apply mvue:select-none;
+		@apply mvue:overflow-hidden;
+		@apply mvue:outline-none;
 		@apply mvue:transition mvue:ease-in-out mvue:duration-150;
+
+		padding: var(--mvue-button-select-item-padding-y, 0.25rem) var(--mvue-button-select-item-padding-x, 0.25rem);
 
 		font-family: inherit;
 		font-feature-settings: inherit;
@@ -32,10 +22,30 @@
 
 		cursor: var(--mvue-button-select-item-cursor, pointer);
 
-		background-color: var(--mvue-button-select-item-bg-color, transparent);
+		background-color: var(--mvue-button-select-item-bg-color, oklch(92% 0.004 286.32)); /* zinc 200 */
 
-		border-radius: var(--mvue-button-border-radius-top-left, 0.4rem) var(--mvue-button-border-radius-top-right, 0.4rem)
-			var(--mvue-button-border-radius-bottom-right, 0.4rem) var(--mvue-button-border-radius-bottom-left, 0.4rem);
+		border-radius: var(--mvue-button-select-item-border-radius-top-left, 0rem) var(--mvue-button-select-item-border-radius-top-right, 0rem)
+			var(--mvue-button-select-item-border-radius-bottom-right, 0rem) var(--mvue-button-select-item-border-radius-bottom-left, 0rem);
+
+		border: 1px solid var(--mvue-button-select-item-border-color, oklch(92% 0.004 286.32)); /* zinc 200 */
+	}
+
+	.m-component-button-select .m-button-select-item:first-child {
+		--mvue-button-select-item-border-radius-top-left: 0.4rem;
+		--mvue-button-select-item-border-radius-bottom-left: 0.4rem;
+	}
+
+	.m-component-button-select .m-button-select-item:last-child {
+		--mvue-button-select-item-border-radius-top-right: 0.4rem;
+		--mvue-button-select-item-border-radius-bottom-right: 0.4rem;
+	}
+
+	.m-component-button-select .m-button-select-item .m-component-label {
+		@apply mvue:transition mvue:ease-in-out mvue:duration-150;
+
+		background-color: var(--mvue-button-select-item-label-bg-color, transparent);
+
+		border-radius: var(--mvue-button-select-item-label-border-radius, 0.4rem);
 	}
 
 	.m-component-button-select .m-button-select-item .m-component-label .m-component-icon {
@@ -44,6 +54,35 @@
 
 	.m-component-button-select .m-button-select-item-active {
 		--mvue-button-select-item-text-color: oklch(14.1% 0.005 285.823); /* zinc 950 */
-		--mvue-button-select-item-bg-color: oklch(100% 0 0); /* white */
+	}
+
+	.m-component-button-select .m-button-select-item-active .m-component-label {
+		--mvue-button-select-item-label-bg-color: oklch(100% 0 0); /* white */
+	}
+
+	.m-component-button-select .m-button-select-item:disabled {
+		--mvue-button-select-item-text-color: oklch(70.5% 0.015 286.067); /* zinc 400 */
+		--mvue-button-select-item-bg-color: oklch(87.1% 0.006 286.286); /* zinc 300 */
+		--mvue-button-select-item-cursor: not-allowed;
+	}
+
+	.m-component-button-select-size-small {
+		--mvue-button-select-item-font-size: 0.9rem;
+
+		--mvue-label-padding-y: 0.235rem;
+		--mvue-label-padding-x: 0.485rem;
+
+		--mvue-icon-width: 0.9rem;
+		--mvue-icon-height: 0.9rem;
+	}
+
+	.m-component-button-select-size-large {
+		--mvue-button-select-item-font-size: 1.125rem;
+
+		--mvue-label-padding-y: 0.485rem;
+		--mvue-label-padding-x: 0.735rem;
+
+		--mvue-icon-width: 1.125rem;
+		--mvue-icon-height: 1.125rem;
 	}
 }

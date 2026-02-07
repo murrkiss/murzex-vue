@@ -1,4 +1,4 @@
-import { computed, h, Ref, ref, SetupContext, VNodeChild } from 'vue'
+import { h, Ref, ref, SetupContext, VNodeChild } from 'vue'
 
 import type { ButtonSelectPropsTypes, ButtonSelectEmitsTypes } from './types'
 
@@ -16,6 +16,10 @@ export class ButtonSelectService {
 
 	clsx = (): string[] => {
 		const clsx = ['m-component-button-select']
+
+		if (this.props.size) {
+			clsx.push(`m-component-button-select-size-${this.props.size}`)
+		}
 
 		return clsx
 	}
@@ -50,7 +54,12 @@ export class ButtonSelectService {
 
 			return h(
 				'button',
-				{ key: index, class: [...clsx, this.isActived.value.includes(item.key) ? 'm-button-select-item-active' : ''], onClick: handleClick },
+				{
+					key: index,
+					class: [...clsx, this.isActived.value.includes(item.key) ? 'm-button-select-item-active' : ''],
+					onClick: handleClick,
+					disabled: item.disabled,
+				},
 				[h($MLabel, { value: item.value, icons: item.icons })],
 			)
 		})
