@@ -15,4 +15,6 @@ export class ButtonSelectService {
 
 		return clsx
 	}
+
+	getButtonSelect = (): VNodeChild => {}
 }
