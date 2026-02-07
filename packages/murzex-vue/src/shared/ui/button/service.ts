@@ -1,4 +1,4 @@
-import { SetupContext } from '@vue/runtime-core'
+import { SetupContext } from 'vue'
 
 import type { ButtonPropsTypes, ButtonEmitsTypes, ButtonGroupComputedContextTypes } from './types'
 

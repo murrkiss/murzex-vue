@@ -1,4 +1,4 @@
-import { h, SetupContext, VNodeChild } from '@vue/runtime-core'
+import { h, SetupContext, VNodeChild } from 'vue'
 
 import type { LabelPropsTypes, LabelEmitsTypes, PositionType } from './types'
 

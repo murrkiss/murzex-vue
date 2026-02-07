@@ -1,6 +1,6 @@
 import './tw.style.css'
 
-import { computed, ComputedRef, defineComponent, h, inject, SetupContext } from '@vue/runtime-core'
+import { computed, ComputedRef, defineComponent, h, inject, SetupContext } from 'vue'
 
 import type { ButtonPropsTypes, ButtonEmitsTypes, ButtonGroupComputedContextTypes } from './types'
 

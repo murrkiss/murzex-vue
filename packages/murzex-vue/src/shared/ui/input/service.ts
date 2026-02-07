@@ -1,4 +1,4 @@
-import { SetupContext } from '@vue/runtime-core'
+import { SetupContext } from 'vue'
 
 import type { InputPropsTypes, InputEmitsTypes } from './types'
 

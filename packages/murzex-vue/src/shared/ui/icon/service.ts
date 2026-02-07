@@ -1,4 +1,4 @@
-import { SetupContext, VNodeChild, h } from '@vue/runtime-core'
+import { SetupContext, VNodeChild, h } from 'vue'
 
 import type { IconPropsTypes, IconEmitsTypes } from './types'
 

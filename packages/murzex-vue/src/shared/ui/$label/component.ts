@@ -1,6 +1,6 @@
 import './tw.style.css'
 
-import { defineComponent, h, SetupContext } from '@vue/runtime-core'
+import { defineComponent, h, SetupContext } from 'vue'
 
 import type { LabelPropsTypes, LabelEmitsTypes } from './types'
 

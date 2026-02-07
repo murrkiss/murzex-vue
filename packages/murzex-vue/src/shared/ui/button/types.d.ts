@@ -1,4 +1,4 @@
-import { ComputedRef } from '@vue/runtime-core'
+import { ComputedRef } from 'vue'
 
 import { LabelPropsTypes } from '../$label/types'
 

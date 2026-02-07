@@ -1,4 +1,4 @@
-import { h, Ref, SetupContext, VNodeChild } from '@vue/runtime-core'
+import { h, Ref, SetupContext, VNodeChild } from 'vue'
 
 import type { ButtonSelectPropsTypes, ButtonSelectEmitsTypes, ButtonPropsTypes } from './types'
 
