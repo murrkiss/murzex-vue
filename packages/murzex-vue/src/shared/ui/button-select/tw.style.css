@@ -1,4 +1,38 @@
 @reference '../../../app/assets/styles/tw.main.style.css';
 
 @layer components {
+	.m-component-button-select {
+		@apply mvue:relative;
+		@apply mvue:inline-flex mvue:flex-nowrap mvue:items-center mvue:gap-2;
+		@apply mvue:select-none;
+		@apply mvue:overflow-hidden;
+		@apply mvue:outline-none;
+		@apply mvue:align-middle;
+		@apply mvue:box-border;
+		@apply mvue:transition mvue:ease-in-out mvue:duration-150;
+
+		padding: var(--mvue-button-select-padding-y, 0.36rem) var(--mvue-button-select-padding-x, 0.36rem);
+
+		background-color: var(--mvue-button-select-bg-color, oklch(92% 0.004 286.32)); /* zinc 200 */
+
+		border-radius: var(--mvue-button-select-border-radius-top-left, 0.4rem) var(--mvue-button-select-border-radius-top-right, 0.4rem)
+			var(--mvue-button-select-border-radius-bottom-right, 0.4rem) var(--mvue-button-select-border-radius-bottom-left, 0.4rem);
+
+		border: 1px solid var(--mvue-button-select-border-color, oklch(92% 0.004 286.32)); /* zinc 200 */
+	}
+
+	.m-component-button-select .m-button-select-item {
+		font-family: inherit;
+		font-feature-settings: inherit;
+		font-size: var(--mvue-button-select-item-font-size, 1rem);
+		font-weight: 500;
+		color: var(--mvue-button-select-item-text-color, oklch(55.2% 0.016 285.938)); /* zinc 500 */
+
+		cursor: var(--mvue-button-select-item-cursor, pointer);
+	}
+
+	.m-component-button-select .m-button-select-item-active {
+		color: var(--mvue-button-select-item-text-color, oklch(14.1% 0.005 285.823)); /* zinc 950 */
+		background-color: var(--mvue-button-select-bg-color, oklch(100% 0 0)); /* white */
+	}
 }

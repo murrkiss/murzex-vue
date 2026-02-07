@@ -1,10 +1,18 @@
-import { SetupContext } from '@vue/runtime-core'
+import { h, Ref, SetupContext, VNodeChild } from '@vue/runtime-core'
 
-import type { ButtonSelectPropsTypes, ButtonSelectEmitsTypes } from './types'
+import type { ButtonSelectPropsTypes, ButtonSelectEmitsTypes, ButtonPropsTypes } from './types'
+
+import $MLabel from '../$label/component'
 
 export class ButtonSelectService {
 	constructor(
 		public props: ButtonSelectPropsTypes,
 		public ctx: SetupContext<ButtonSelectEmitsTypes>,
 	) {}
+
+	clsx = (): string[] => {
+		const clsx = ['m-component-button-select']
+
+		return clsx
+	}
 }
