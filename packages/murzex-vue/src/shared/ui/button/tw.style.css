@@ -11,7 +11,7 @@
 		@apply mvue:box-border;
 		@apply mvue:transition mvue:ease-in-out mvue:duration-150;
 
-		padding: var(--mvue-button-padding-y, 0.36rem) var(--mvue-button-padding-x, 0.36rem);
+		padding: var(--mvue-button-padding-y, 0.25rem) var(--mvue-button-padding-x, 0.25rem);
 
 		font-family: inherit;
 		font-feature-settings: inherit;
@@ -221,8 +221,8 @@
 	.m-button-size-small {
 		--mvue-button-font-size: 0.9rem;
 
-		--mvue-label-padding-y: 0.125rem;
-		--mvue-label-padding-x: 0.375rem;
+		--mvue-label-padding-y: 0.235rem;
+		--mvue-label-padding-x: 0.485rem;
 
 		--mvue-icon-width: 0.9rem;
 		--mvue-icon-height: 0.9rem;
@@ -231,8 +231,8 @@
 	.m-button-size-large {
 		--mvue-button-font-size: 1.125rem;
 
-		--mvue-label-padding-y: 0.375rem;
-		--mvue-label-padding-x: 0.625rem;
+		--mvue-label-padding-y: 0.485rem;
+		--mvue-label-padding-x: 0.735rem;
 
 		--mvue-icon-width: 1.125rem;
 		--mvue-icon-height: 1.125rem;
