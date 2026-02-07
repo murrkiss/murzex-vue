@@ -12,9 +12,11 @@ export interface ButtonPropsTypes extends LabelPropsTypes {
 }
 
 export interface ButtonSelectPropsTypes {
-	buttons?: ButtonPropsTypes[]
+	buttons: ButtonPropsTypes[]
 	severity?: ButtonSeverityType
 	size?: ButtonSizeType
+	default?: string
+	multiple?: boolean
 	rounded?: boolean
 }
 

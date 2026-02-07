@@ -10,10 +10,10 @@ export default defineComponent(
 	(props: ButtonSelectPropsTypes, ctx: SetupContext<ButtonSelectEmitsTypes>) => {
 		const useButtonSelectService = new ButtonSelectService(props, ctx)
 
-		return () => h('div', { ...ctx.attrs, class: useButtonSelectService.clsx() })
+		return () => h('div', { ...ctx.attrs, class: useButtonSelectService.clsx() }, [useButtonSelectService.getButtons()])
 	},
 	{
-		props: ['buttons', 'severity', 'size', 'rounded'],
+		props: ['buttons', 'severity', 'size', 'default', 'multiple', 'rounded'],
 		emits: ['click'],
 	},
 )

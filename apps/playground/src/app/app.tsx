@@ -21,8 +21,11 @@ export default defineComponent(() => {
 
 			<MButtonSelect
 				buttons={[
-					{ key: '1', value: 'One way' },
-					{ key: '2', value: 'Return' },
+					{ key: '1', value: 'Ingeneer developerment' },
+					{ key: '2', value: 'Backend developer' },
+					{ key: '4', value: 'Frontend developer' },
+					{ key: '5', value: 'Fullstack developer' },
+					{ key: '6', value: 'Devops' },
 				]}
 			/>
 		</>
