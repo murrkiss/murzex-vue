@@ -1,6 +1,6 @@
 import { defineComponent } from 'vue'
 
-import { MButtonGroup, MButton, MInput } from '@murzex-vue/mvue'
+import { MButtonSelect, MButtonGroup, MButton, MInput } from '@murzex-vue/mvue'
 
 export default defineComponent(() => {
 	return () => (
@@ -15,9 +15,16 @@ export default defineComponent(() => {
 				<MButton value='Submit' severity='info' />
 			</MButtonGroup> */}
 
-			<MInput placeholder='Enter name:' size='small' invalid />
+			{/* <MInput placeholder='Enter name:' size='small' invalid />
 			<MInput placeholder='Enter name:' />
-			<MInput placeholder='Enter name:' size='large' />
+			<MInput placeholder='Enter name:' size='large' /> */}
+
+			<MButtonSelect
+				buttons={[
+					{ key: '1', value: 'One way' },
+					{ key: '2', value: 'Return' },
+				]}
+			/>
 		</>
 	)
 })
