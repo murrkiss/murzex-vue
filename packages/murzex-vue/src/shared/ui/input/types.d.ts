@@ -13,5 +13,5 @@ export interface InputPropsTypes {
 }
 
 export interface InputEmitsTypes {
-	value: (input: string) => string
+	value: (event: string) => string
 }
