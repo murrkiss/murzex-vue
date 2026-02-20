@@ -1,0 +1,49 @@
+{
+	"name": "@murzex/mvue",
+	"version": "1.1.0",
+	"description": "Murzex vue - UI Components Library for Vue 3",
+	"keywords": [
+		"vue",
+		"vue3",
+		"ui",
+		"components",
+		"library"
+	],
+	"author": {
+		"name": "murrkiss"
+	},
+	"homepage": "https://github.com/murrkiss/murzex-vue",
+	"repository": {
+		"type": "git",
+		"url": "https://github.com/murrkiss/murzex-vue.git"
+	},
+	"bugs": {
+		"url": "https://github.com/murrkiss/murzex-vue/issues"
+	},
+	"publishAccess": {
+		"access": "public"
+	},
+	"engines": {
+		"node": ">=12.11.0"
+	},
+	"license": "MIT",
+	"main": "./dist/index.umd.js",
+	"module": "./dist/index.es.js",
+	"types": "./dist/index.d.ts",
+	"exports": {
+		".": {
+			"main": "./dist/index.umd.js",
+			"module": "./dist/index.es.js",
+			"types": "./dist/index.d.ts"
+		},
+		"./style": "./dist/mvue.css"
+	},
+	"files": [
+		"dist"
+	],
+	"scripts": {},
+	"peerDependencies": {
+		"vue": "^3.5.0"
+	},
+	"packageManager": "pnpm@10.30.1"
+}
